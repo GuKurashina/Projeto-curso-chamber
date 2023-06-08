@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Staatliches', cursive;
+}
+
+li:hover {
+    color: #fd8b8b;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://images.alphacoders.com/128/1282492.jpg');
+    background-position: 100% 10%;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+#trailer-container  {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 60%;
+    margin-top: 50px;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Staatliches', cursive;
+    width: 70%;
+    margin-left: 50px;
+}
+
+.button {
+    width: 350px;
+    height: 100px;
+    background-color: #fd8b8b;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline:none;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Staatliches', cursive;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 1px 1px 10px rgb(255, 81, 81);
+}
+
+.banner-1 {
+    background-image: url('https://wallpaperaccess.com/full/4814073.png');
+    background-position: 50% 50%;
+
+}
+
+.banner-2 {
+    background-image: url('https://images4.alphacoders.com/108/thumb-1920-1080943.jpg');
+    background-position: 30% 50%;
+}
+
+.banner-3 {
+    background-image: url('https://images7.alphacoders.com/114/1149401.jpg');
+    background-position: 40% 50%;
+}
+
+footer {
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid;
+    border-color: rgb(241, 68, 68);
+}
+
+span {
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+}
+
+.footer-navigation {
+    /* display: none; Utilizamos display none para que não apareça de cara na tela do computador, vamos estilizar para aparecer no mobile */
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 47%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 92%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .button {
+        width: 92%;
+        margin: 30px 0px 0px 0px;
+        
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 100px;
+    }
+}
+
+/* !---CSS FOTOS---! */
+
+.photos-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.img-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+/* .img1 {
+    background-image: url('https://images.alphacoders.com/118/thumbbig-1186644.webp') ;
+}
+
+.img2 {
+    background-image: url('https://images4.alphacoders.com/129/thumbbig-1298923.webp');
+}
+
+.img3 {
+    background-image: url('https://images4.alphacoders.com/125/thumbbig-1253482.webp');
+}
+
+.img4 {
+    background-image: url('https://images4.alphacoders.com/121/thumbbig-1211517.webp');
+} */
+
+/* .photo {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.photo:hover {
+    transform: scale(1.03);
+    box-shadow: 1px 1px 10px red;
+} */
+
+.img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.8s;
+    border-radius: 5px;
+}
+
+.img:hover {
+    transform: scale(1.03);
+    box-shadow: 1px 1px 10px rgb(255, 81, 81);
+}
+
+@media (max-width: 768px) {
+    .img-content {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+}
+
+/* ---!CSS HABILIDADES!--- */
+
+.h1-habilidade {
+    color: #fff;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+#habilidade {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    margin-top: -50px;
+}
+
+.description-hability {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .8s;
+    background-color: transparent;
+}
+
+.video-hability {
+    scale: 75%;
+    width: 100px;
+    display: flex;
+}
+
+.h1-habilidade:hover {
+    transform: scale(1.03);
+    color: rgb(241, 255, 46);
+    cursor: crosshair;
+    font-style: italic;
+}
+
+.description-hability:hover {
+    transform: scale(1.06);
+}
+
+#habilidade-c {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    margin-top: -300px;
+    margin-bottom: -450px;
+}
+
+.description-hability-c {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.8s;
+    background-color: transparent;
+}
+
+.video-hability-c {
+    scale: 50%;
+    width: 50px;
+    display: flex;
+}
+
+.description-hability-c:hover {
+    transform: scale(1.06);
+}
+
+#habilidade-x {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+    font-family: 'Staatliches', cursive;
+    margin-top: -450px;
+    margin-bottom: -250px;
+}
+
+.description-hability-x {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.8s;
+    background-color: transparent;
+}
+
+.video-hability-x {
+    scale: 50%;
+    width: 50px;
+    display: flex;
+}
+
+.description-hability-x:hover {
+    transform: scale(1.06);
+}
+
+@media (max-width: 768px) {
+    #habilidade {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    width: 100%;
+    }
+    #habilidade-c {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    #habilidade-x {
+        grid-template-columns: 1fr;
+        width: 100%;   
+    }
+    .video-hability {
+        scale: 28%;
+        margin-top: -250px;
+        margin-bottom: -120px;
+        margin-left: -20px;
+    }
+    .video-hability-c, .video-hability-x {
+        scale: 19%;
+        margin-bottom: -180px;
+        margin-left: -8px;
+    }
+    .description-hability-c {
+        margin-top: 60px;
+        margin-bottom: -550px;
+    }
+    .description-hability-x {
+        margin-top: 230px;
+        margin-bottom: -420px ;
+    }
+
+    .description-hability-c:hover, .description-hability-x:hover, .description-hability:hover {
+        transform: scale(1.02);
+    }
+}
