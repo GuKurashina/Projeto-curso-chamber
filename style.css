@@ -51,7 +51,11 @@ li:hover {
     background-size: cover;
     width: 100%;
     height: 500px;
+<<<<<<< HEAD
     margin-top: 20px;
+=======
+    marging-top: 20px;
+>>>>>>> 0c13bef47f5548df9628e0d373a4a3c4bbafea69
 }
 
 #trailer-container  {
@@ -460,7 +464,6 @@ span {
         margin-top: 230px;
         margin-bottom: -420px ;
     }
-
     .description-hability-c:hover, .description-hability-x:hover, .description-hability:hover {
         transform: scale(1.02);
     }
